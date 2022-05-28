@@ -13,6 +13,7 @@
 		B35108C52842155D002E9603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35108C32842155D002E9603 /* Main.storyboard */; };
 		B35108C72842155D002E9603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B35108C62842155D002E9603 /* Assets.xcassets */; };
 		B35108CA2842155D002E9603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B35108C82842155D002E9603 /* LaunchScreen.storyboard */; };
+		B35108D4284217FE002E9603 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B35108D3284217FE002E9603 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B35108C62842155D002E9603 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B35108C92842155D002E9603 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B35108CB2842155D002E9603 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B35108D3284217FE002E9603 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		B35108BC2842155C002E9603 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				B35108D2284215BE002E9603 /* View */,
+				B35108D128421592002E9603 /* Controller */,
 				B35108BD2842155D002E9603 /* AppDelegate.swift */,
 				B35108BF2842155D002E9603 /* SceneDelegate.swift */,
-				B35108C12842155D002E9603 /* ViewController.swift */,
 				B35108C32842155D002E9603 /* Main.storyboard */,
 				B35108C62842155D002E9603 /* Assets.xcassets */,
 				B35108C82842155D002E9603 /* LaunchScreen.storyboard */,
 				B35108CB2842155D002E9603 /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		B35108D128421592002E9603 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B35108C12842155D002E9603 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B35108D2284215BE002E9603 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B35108D3284217FE002E9603 /* CurrencyTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +159,7 @@
 			files = (
 				B35108C22842155D002E9603 /* ViewController.swift in Sources */,
 				B35108BE2842155D002E9603 /* AppDelegate.swift in Sources */,
+				B35108D4284217FE002E9603 /* CurrencyTextField.swift in Sources */,
 				B35108C02842155D002E9603 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +315,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,6 +344,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
