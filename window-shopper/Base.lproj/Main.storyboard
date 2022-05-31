@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -14,21 +14,21 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="window_shopper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperBG" translatesAutoresizingMaskIntoConstraints="NO" id="ziv-cp-YRS">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="windowShopperIcon" translatesAutoresizingMaskIntoConstraints="NO" id="O24-DT-gfV">
-                                <rect key="frame" x="157" y="74" width="100" height="100"/>
+                                <rect key="frame" x="137.66666666666666" y="74" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="YCd-mf-YMr"/>
                                     <constraint firstAttribute="height" constant="100" id="uMn-sb-xdG"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vUS-80-f1s" customClass="CurrencyTextField" customModule="window_shopper" customModuleProvider="target">
-                                <rect key="frame" x="20" y="234" width="374" height="40"/>
+                                <rect key="frame" x="20" y="224" width="335" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="aTz-GD-1Vn"/>
                                 </constraints>
@@ -36,34 +36,77 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3xw-F4-KUe" customClass="CurrencyTextField" customModule="window_shopper" customModuleProvider="target">
-                                <rect key="frame" x="20" y="304" width="374" height="40"/>
+                                <rect key="frame" x="20" y="284" width="335" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="f5O-G2-7fQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="543" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbP-gJ-30P">
+                                <rect key="frame" x="20" y="374" width="335" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="JZk-71-gu8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEO-UP-kuc">
+                                <rect key="frame" x="155.66666666666666" y="434" width="64" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Hi7-XC-l2B"/>
+                                    <constraint firstAttribute="height" constant="24" id="k2l-Sd-Oni"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTS-uf-N3U">
+                                <rect key="frame" x="20" y="723" width="335" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="5Po-df-CmL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalcPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="whO-FB-yG7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3xw-F4-KUe" firstAttribute="leading" secondItem="vUS-80-f1s" secondAttribute="leading" id="0G1-gF-VYr"/>
                             <constraint firstItem="ziv-cp-YRS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="2SO-SZ-vsV"/>
+                            <constraint firstItem="rbP-gJ-30P" firstAttribute="trailing" secondItem="vUS-80-f1s" secondAttribute="trailing" id="372-gc-2W0"/>
                             <constraint firstItem="ziv-cp-YRS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="5vU-7S-93w"/>
                             <constraint firstAttribute="bottom" secondItem="ziv-cp-YRS" secondAttribute="bottom" id="Fkz-WO-CWE"/>
-                            <constraint firstItem="3xw-F4-KUe" firstAttribute="top" secondItem="vUS-80-f1s" secondAttribute="bottom" constant="30" id="HpF-9G-u1O"/>
+                            <constraint firstItem="3xw-F4-KUe" firstAttribute="top" secondItem="vUS-80-f1s" secondAttribute="bottom" constant="20" id="HpF-9G-u1O"/>
                             <constraint firstItem="O24-DT-gfV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="Icd-Ec-cLL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zTS-uf-N3U" secondAttribute="trailing" constant="20" id="UD0-lC-izF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zTS-uf-N3U" secondAttribute="bottom" constant="20" id="UN7-Su-QoE"/>
                             <constraint firstItem="3xw-F4-KUe" firstAttribute="trailing" secondItem="vUS-80-f1s" secondAttribute="trailing" id="Xhi-fW-jhj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ziv-cp-YRS" secondAttribute="trailing" id="aSu-Qx-ZDk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vUS-80-f1s" secondAttribute="trailing" constant="20" id="gcs-ll-L5N"/>
                             <constraint firstItem="vUS-80-f1s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="h0b-cS-GXZ"/>
                             <constraint firstItem="O24-DT-gfV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hKE-Is-Hfh"/>
+                            <constraint firstItem="rbP-gJ-30P" firstAttribute="leading" secondItem="vUS-80-f1s" secondAttribute="leading" id="hMO-OR-HKD"/>
+                            <constraint firstItem="rbP-gJ-30P" firstAttribute="top" secondItem="3xw-F4-KUe" secondAttribute="bottom" constant="50" id="pzp-mt-BBa"/>
+                            <constraint firstItem="gEO-UP-kuc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qJl-Jw-xwS"/>
                             <constraint firstItem="3xw-F4-KUe" firstAttribute="height" secondItem="vUS-80-f1s" secondAttribute="height" id="qZl-3r-10w"/>
-                            <constraint firstItem="vUS-80-f1s" firstAttribute="top" secondItem="O24-DT-gfV" secondAttribute="bottom" constant="60" id="wc3-dE-dbT"/>
+                            <constraint firstItem="zTS-uf-N3U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uH3-0E-HKz"/>
+                            <constraint firstItem="gEO-UP-kuc" firstAttribute="top" secondItem="rbP-gJ-30P" secondAttribute="bottom" id="uz4-NF-gdY"/>
+                            <constraint firstItem="vUS-80-f1s" firstAttribute="top" secondItem="O24-DT-gfV" secondAttribute="bottom" constant="50" id="wc3-dE-dbT"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="hoursLabel" destination="gEO-UP-kuc" id="qna-e2-w4n"/>
                         <outlet property="priceTxt" destination="3xw-F4-KUe" id="ZxW-jI-oR7"/>
+                        <outlet property="resultLabel" destination="rbP-gJ-30P" id="kpe-SA-HOc"/>
                         <outlet property="wageTxt" destination="vUS-80-f1s" id="ioq-BJ-gVi"/>
                     </connections>
                 </viewController>
@@ -74,10 +117,10 @@
     </scenes>
     <designables>
         <designable name="3xw-F4-KUe">
-            <size key="intrinsicContentSize" width="65" height="18.5"/>
+            <size key="intrinsicContentSize" width="64.666666666666671" height="19"/>
         </designable>
         <designable name="vUS-80-f1s">
-            <size key="intrinsicContentSize" width="111.5" height="18.5"/>
+            <size key="intrinsicContentSize" width="111.33333333333333" height="19"/>
         </designable>
     </designables>
     <resources>
